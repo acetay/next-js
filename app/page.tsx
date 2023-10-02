@@ -1,17 +1,10 @@
 'use client';
 
-import Image from 'next/image';
-import cat from '@/public/images/cat 2.jpg';
 import Link from 'next/link';
 import ProductCart from './components/ProductCart';
-import { getServerSession } from 'next-auth';
-import { authOptions } from './api/auth/[...nextauth]/route';
-import { Metadata } from 'next';
 
 import { useState } from 'react';
-import dynamic from 'next/dynamic';
 
-import _ from 'lodash';
 
 //lazy loading - use only for large/heavy component
 // const HeavyComponent = dynamic(() => import('./components/HeavyComponent'), {
